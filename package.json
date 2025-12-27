@@ -19,12 +19,12 @@
     "dist/**"
   ],
   "types": "./dist/index.d.ts",
-  "main": "./dist/react-doc-viewer.cjs",
-  "module": "./dist/react-doc-viewer.js",
+  "main": "./dist/react-doc-viewer-pdf.cjs",
+  "module": "./dist/react-doc-viewer-pdf.js",
   "exports": {
     ".": {
-      "import": "./dist/react-doc-viewer.js",
-      "require": "./dist/react-doc-viewer.cjs",
+      "import": "./dist/react-doc-viewer-pdf.js",
+      "require": "./dist/react-doc-viewer-pdf.cjs",
       "types": "./dist/index.d.ts"
     },
     "./dist/index.css": {
