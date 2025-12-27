@@ -6409,13 +6409,13 @@ if (Te) {
       "./empty-GlqisfcO.js"
     ), e = await import(
       /*webpackIgnore: true*/
-      "./index-Df_666Ch.js"
+      "./index-FfiDVvjQ.js"
     ).then((l) => l.i), n = await import(
       /*webpackIgnore: true*/
-      "./index-CwVsxbJ0.js"
+      "./index-DVNiTXow.js"
     ).then((l) => l.i), i = await import(
       /*webpackIgnore: true*/
-      "./url-DoQqnzjw.js"
+      "./url-9uiDs4t2.js"
     ).then((l) => l.u);
     let s, o;
     return new Map(Object.entries({
@@ -17406,9 +17406,9 @@ const $h = () => {
     return null;
   const s = dn(
     () => ({
-      cMapUrl: "@momosetkn/react-doc-viewer-pdf/dist/cmaps",
+      cMapUrl: "@momosetkn/react-doc-viewer-pdf/dist/cmaps/",
       cMapPacked: !0,
-      standardFontDataUrl: "@momosetkn/react-doc-viewer-pdf/dist/standard_fonts"
+      standardFontDataUrl: "@momosetkn/react-doc-viewer-pdf/dist/standard_fonts/"
     }),
     []
     // 依存なしなら一度だけ生成
