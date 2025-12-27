@@ -9,6 +9,11 @@ import { initialPDFState } from "../../state/reducer";
 import { PDFAllPages } from "./PDFAllPages";
 import PDFSinglePage from "./PDFSinglePage";
 
+// @ts-ignore
+const cMapUrl = new URL("../cmaps/", import.meta.url).toString();
+// @ts-ignore
+const standardFontDataUrl = new URL("../standard_fonts/", import.meta.url,).toString();
+
 const PDFPages: FC<{}> = () => {
   const {
     state: { mainState, paginated },
@@ -25,9 +30,9 @@ const PDFPages: FC<{}> = () => {
   if (!currentDocument || currentDocument.fileData === undefined) return null;
   const options = useMemo(
     () => ({
-      cMapUrl: "@momosetkn/react-doc-viewer-pdf/dist/cmaps/",
+      cMapUrl: cMapUrl,
       cMapPacked: true,
-      standardFontDataUrl: "@momosetkn/react-doc-viewer-pdf/dist/standard_fonts/",
+      standardFontDataUrl: standardFontDataUrl,
     }),
     [], // 依存なしなら一度だけ生成
   );
