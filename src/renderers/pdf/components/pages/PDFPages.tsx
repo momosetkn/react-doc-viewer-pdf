@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React, { FC, useContext, useEffect } from "react";
+import React, { FC, useContext, useEffect, useMemo } from "react";
 import { Document } from "react-pdf";
 import styled from "styled-components";
 import { useTranslation } from "../../../../hooks/useTranslation";
@@ -23,17 +23,21 @@ const PDFPages: FC<{}> = () => {
   }, [currentDocument]);
 
   if (!currentDocument || currentDocument.fileData === undefined) return null;
+  const options = useMemo(
+    () => ({
+      cMapUrl: "dist/cmaps",
+      cMapPacked: true,
+      standardFontDataUrl: "/dist/standard_fonts",
+    }),
+    [], // 依存なしなら一度だけ生成
+  );
 
   return (
     <DocumentPDF
       file={currentDocument.fileData}
       onLoadSuccess={({ numPages }) => dispatch(setNumPages(numPages))}
       loading={<span>{t("pdfPluginLoading")}</span>}
-      options={{
-        cMapUrl: 'dist/cmaps',
-        cMapPacked: true,
-        standardFontDataUrl: '/dist/standard_fonts',
-      }}
+      options={options}
     >
       {paginated ? <PDFSinglePage /> : <PDFAllPages />}
     </DocumentPDF>
