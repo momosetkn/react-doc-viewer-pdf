@@ -6409,13 +6409,13 @@ if (Te) {
       "./empty-GlqisfcO.js"
     ), e = await import(
       /*webpackIgnore: true*/
-      "./index-DtNxIu8h.js"
+      "./index-Cm3CSs0s.js"
     ).then((l) => l.i), n = await import(
       /*webpackIgnore: true*/
-      "./index-DtEol4Lx.js"
+      "./index-DWSMTTdi.js"
     ).then((l) => l.i), i = await import(
       /*webpackIgnore: true*/
-      "./url-BQ0eAD2q.js"
+      "./url-BN_JlN57.js"
     ).then((l) => l.u);
     let s, o;
     return new Map(Object.entries({
@@ -17400,9 +17400,11 @@ const $h = () => {
     state: { mainState: r, paginated: t },
     dispatch: e
   } = $i(Ba), { t: n } = $h(), i = (r == null ? void 0 : r.currentDocument) || null;
-  return Pt(() => {
+  if (Pt(() => {
     e(g0(Wi.numPages));
-  }, [i]), !i || i.fileData === void 0 ? null : (dn(
+  }, [i]), !i || i.fileData === void 0)
+    return null;
+  const s = dn(
     () => ({
       cMapUrl: "dist/cmaps",
       cMapPacked: !0,
@@ -17410,15 +17412,17 @@ const $h = () => {
     }),
     []
     // 依存なしなら一度だけ生成
-  ), /* @__PURE__ */ j(
+  );
+  return /* @__PURE__ */ j(
     JC,
     {
       file: i.fileData,
-      onLoadSuccess: ({ numPages: s }) => e(g0(s)),
+      onLoadSuccess: ({ numPages: o }) => e(g0(o)),
       loading: /* @__PURE__ */ j("span", { children: n("pdfPluginLoading") }),
+      options: s,
       children: t ? /* @__PURE__ */ j(_v, {}) : /* @__PURE__ */ j(KC, {})
     }
-  ));
+  );
 }, JC = Ft(cC)`
   display: flex;
   flex-direction: column;
