@@ -10,7 +10,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   `https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`,
 ).toString();
 
-const PDFRenderer: DocRenderer = ({ mainState }) => {
+const FullspecPDFRenderer: DocRenderer = ({ mainState }) => {
   return (
     <PDFProvider mainState={mainState}>
       <Container id="pdf-renderer" data-testid="pdf-renderer">
@@ -21,10 +21,10 @@ const PDFRenderer: DocRenderer = ({ mainState }) => {
   );
 };
 
-export default PDFRenderer;
+export default FullspecPDFRenderer;
 
-PDFRenderer.fileTypes = ["pdf", "application/pdf"];
-PDFRenderer.weight = 0;
+FullspecPDFRenderer.fileTypes = ["pdf", "application/pdf"];
+FullspecPDFRenderer.weight = 0;
 
 const Container = styled.div`
   display: flex;

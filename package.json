@@ -1,8 +1,8 @@
 {
-  "name": "@cyntler/react-doc-viewer",
-  "version": "1.17.1",
-  "description": "File viewer for React.",
-  "author": "Matthew Mogford / Damian Cyntler",
+  "name": "@momosetkn/react-doc-viewer-pdf",
+  "version": "1.0.0",
+  "description": "PDF renderer for react-doc-viewer.",
+  "author": "momosetkn",
   "type": "module",
   "keywords": [
     "reactjs",
@@ -11,9 +11,9 @@
     "doc-viewer"
   ],
   "license": "Apache License 2.0",
-  "homepage": "https://cyntler.github.io/react-doc-viewer",
+  "homepage": "https://momosetkn.github.io/react-doc-viewer-pdf",
   "repository": {
-    "url": "https://github.com/cyntler/react-doc-viewer"
+    "url": "https://github.com/momosetkn/react-doc-viewer-pdf"
   },
   "files": [
     "dist/**"
@@ -47,6 +47,7 @@
     "prepublish": "npm run build-readme-toc"
   },
   "dependencies": {
+    "@cyntler/react-doc-viewer": "^1.17.0",
     "@types/mustache": "^4.2.5",
     "@types/papaparse": "^5.3.14",
     "ajv": "^7.2.4",
@@ -92,6 +93,7 @@
     "vite": "^5.2.12",
     "vite-plugin-dts": "^3.9.1",
     "vite-plugin-node-polyfills": "^0.22.0",
+    "vite-plugin-static-copy": "^3.1.4",
     "vitest": "^1.6.0",
     "vitest-fetch-mock": "^0.2.2",
     "webpack": "^5.91.0"

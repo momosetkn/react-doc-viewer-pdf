@@ -2,6 +2,7 @@ import { defineConfig } from "vitest/config";
 import dsv from "@rollup/plugin-dsv";
 import dts from "vite-plugin-dts";
 import { nodePolyfills } from "vite-plugin-node-polyfills";
+import { viteStaticCopy } from "vite-plugin-static-copy";
 
 export default defineConfig({
   plugins: [
@@ -10,6 +11,15 @@ export default defineConfig({
     }),
     dsv(),
     nodePolyfills(),
+    viteStaticCopy({
+      targets: [
+        { src: "node_modules/pdfjs-dist/cmaps/*", dest: "cmaps" },
+        {
+          src: "node_modules/pdfjs-dist/standard_fonts/*",
+          dest: "standard_fonts",
+        },
+      ],
+    }),
   ],
   build: {
     lib: {

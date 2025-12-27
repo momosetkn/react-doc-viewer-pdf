@@ -29,6 +29,11 @@ const PDFPages: FC<{}> = () => {
       file={currentDocument.fileData}
       onLoadSuccess={({ numPages }) => dispatch(setNumPages(numPages))}
       loading={<span>{t("pdfPluginLoading")}</span>}
+      options={{
+        cMapUrl: 'dist/cmaps',
+        cMapPacked: true,
+        standardFontDataUrl: '/dist/standard_fonts',
+      }}
     >
       {paginated ? <PDFSinglePage /> : <PDFAllPages />}
     </DocumentPDF>
