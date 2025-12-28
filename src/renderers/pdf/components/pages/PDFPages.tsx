@@ -41,7 +41,7 @@ const PDFPages: FC<{}> = () => {
   if (!currentDocument || currentDocument.fileData === undefined) return null;
   const options = useMemo(
     () => ({
-      cMapUrl: "dist/cmaps",
+      cMapUrl: "dist/cmaps/",
       cMapPacked: true,
       standardFontDataUrl: "dist/standard_fonts/",
     }),
