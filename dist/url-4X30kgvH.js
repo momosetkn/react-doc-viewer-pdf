@@ -1,4 +1,4 @@
-import { c as oe, g as Ie } from "./index-CBelw8Yu.js";
+import { c as oe, g as Ie } from "./index-C7cD8McL.js";
 var re = { exports: {} };
 /*! https://mths.be/punycode v1.4.1 by @mathias */
 re.exports;

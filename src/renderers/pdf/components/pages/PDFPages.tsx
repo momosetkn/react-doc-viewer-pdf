@@ -41,9 +41,9 @@ const PDFPages: FC<{}> = () => {
   if (!currentDocument || currentDocument.fileData === undefined) return null;
   const options = useMemo(
     () => ({
-      cMapUrl: cMapUrl,
+      cMapUrl: "./node_modules/pdfjs-dist/cmaps/",
       cMapPacked: true,
-      standardFontDataUrl: standardFontDataUrl,
+      standardFontDataUrl: "./node_modules/pdfjs-dist/standard_fonts/",
     }),
     [], // 依存なしなら一度だけ生成
   );
