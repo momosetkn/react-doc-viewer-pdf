@@ -16,6 +16,9 @@ const standardFontDataUrl = new URL(
   // @ts-ignore
   import.meta.url,
 ).toString();
+console.log("cMapUrl", cMapUrl);
+console.log("fontUrl", standardFontDataUrl);
+
 
 const PDFPages: FC<{}> = () => {
   const {
