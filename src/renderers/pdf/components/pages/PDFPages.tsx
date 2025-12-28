@@ -9,10 +9,15 @@ import { initialPDFState } from "../../state/reducer";
 import { PDFAllPages } from "./PDFAllPages";
 import PDFSinglePage from "./PDFSinglePage";
 
-// @ts-ignore
-const cMapUrl = new URL(  "../../../../cmaps/", import.meta.url).toString();
+const cMapUrl = new URL(
+  "./node_modules/pdfjs-dist/cmaps/",
+  // "../../../../cmaps/",
+  // @ts-ignore
+  import.meta.url,
+).toString();
 const standardFontDataUrl = new URL(
-  "../../../../standard_fonts/",
+  "./node_modules/pdfjs-dist/standard_fonts/",
+  // "../../../../standard_fonts/",
   // @ts-ignore
   import.meta.url,
 ).toString();
