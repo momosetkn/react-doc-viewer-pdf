@@ -6409,13 +6409,13 @@ if (Te) {
       "./empty-GlqisfcO.js"
     ), e = await import(
       /*webpackIgnore: true*/
-      "./index-_ynpEYvA.js"
+      "./index-zJjtc7aS.js"
     ).then((l) => l.i), n = await import(
       /*webpackIgnore: true*/
-      "./index-BI5HRzCt.js"
+      "./index-CV6bqrkI.js"
     ).then((l) => l.i), i = await import(
       /*webpackIgnore: true*/
-      "./url-ZNqptdvl.js"
+      "./url-DHiePGak.js"
     ).then((l) => l.u);
     let s, o;
     return new Map(Object.entries({
@@ -17409,9 +17409,9 @@ const QC = () => {
     return null;
   const s = dn(
     () => ({
-      cMapUrl: "../../../../cmaps/",
+      cMapUrl: "../../../cmaps/",
       cMapPacked: !0,
-      standardFontDataUrl: "../../../../standard_fonts/"
+      standardFontDataUrl: "../../../standard_fonts/"
     }),
     []
     // 依存なしなら一度だけ生成
