@@ -10,9 +10,9 @@ import { PDFAllPages } from "./PDFAllPages";
 import PDFSinglePage from "./PDFSinglePage";
 
 // @ts-ignore
-const cMapUrl = new URL("/dist/cmaps/", import.meta.url).toString();
+const cMapUrl = new URL("./dist/cmaps/", import.meta.url).toString();
 const standardFontDataUrl = new URL(
-  "/dist/standard_fonts/",
+  "./dist/standard_fonts/",
   // @ts-ignore
   import.meta.url,
 ).toString();

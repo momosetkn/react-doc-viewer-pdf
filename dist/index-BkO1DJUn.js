@@ -6409,13 +6409,13 @@ if (Te) {
       "./empty-GlqisfcO.js"
     ), e = await import(
       /*webpackIgnore: true*/
-      "./index-HlVMXxo_.js"
+      "./index-L5WvzV3F.js"
     ).then((l) => l.i), n = await import(
       /*webpackIgnore: true*/
-      "./index-DH2OuZ5m.js"
+      "./index-CS1DSOJ3.js"
     ).then((l) => l.i), i = await import(
       /*webpackIgnore: true*/
-      "./url-D8mxfGLW.js"
+      "./url-Ckbfw1FG.js"
     ).then((l) => l.u);
     let s, o;
     return new Map(Object.entries({
@@ -17395,7 +17395,7 @@ const $h = () => {
   for (let e = 0; e < r; e++)
     t.push(/* @__PURE__ */ j(_v, { pageNum: e + 1 }, e + 1));
   return /* @__PURE__ */ j(kv, { children: t });
-}, ZC = new URL("/dist/cmaps/", import.meta.url).toString(), JC = new URL("/dist/standard_fonts/", import.meta.url).toString(), QC = () => {
+}, ZC = new URL("./dist/cmaps/", import.meta.url).toString(), JC = new URL("./dist/standard_fonts/", import.meta.url).toString(), QC = () => {
   const {
     state: { mainState: r, paginated: t },
     dispatch: e
