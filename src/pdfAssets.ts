@@ -12,3 +12,5 @@ export const STANDARD_FONT_URL = new URL(
   import.meta.url,
 ).toString();
 
+console.log("CMAP_URL", CMAP_URL);
+console.log("STANDARD_FONT_URL", STANDARD_FONT_URL);
