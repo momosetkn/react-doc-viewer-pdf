@@ -8,6 +8,7 @@ import { setNumPages } from "../../state/actions";
 import { initialPDFState } from "../../state/reducer";
 import { PDFAllPages } from "./PDFAllPages";
 import PDFSinglePage from "./PDFSinglePage";
+import { CMAP_URL, STANDARD_FONT_URL } from "../../../../pdfAssets";
 // import "../../../../assets/cmaps/78-EUC-H.bcmap";
 
 // const cMapUrl = new URL(
@@ -29,12 +30,12 @@ import PDFSinglePage from "./PDFSinglePage";
 // @ts-ignore
 // import.meta.glob("../../../../assets/cmaps/*.bcmap", { eager: true });
 
-// @ts-ignore
-const CMAP_URL = new URL("../../../../cmaps/", import.meta.url).toString();
-// @ts-ignore
-const STANDARD_FONT_URL = new URL("../../../../standard_fonts/", import.meta.url).toString();
-console.log("CMAP_URL", CMAP_URL);
-console.log("STANDARD_FONT_URL", STANDARD_FONT_URL);
+// // @ts-ignore
+// const CMAP_URL = new URL("../../../../cmaps/", import.meta.url).toString();
+// // @ts-ignore
+// const STANDARD_FONT_URL = new URL("../../../../standard_fonts/", import.meta.url).toString();
+// console.log("CMAP_URL", CMAP_URL);
+// console.log("STANDARD_FONT_URL", STANDARD_FONT_URL);
 
 const PDFPages: FC<{}> = () => {
   const {
