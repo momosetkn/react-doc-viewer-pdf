@@ -8,6 +8,7 @@ import { setNumPages } from "../../state/actions";
 import { initialPDFState } from "../../state/reducer";
 import { PDFAllPages } from "./PDFAllPages";
 import PDFSinglePage from "./PDFSinglePage";
+// import "../../../../assets/cmaps/78-EUC-H.bcmap";
 
 // const cMapUrl = new URL(
 //   "./node_modules/pdfjs-dist/cmaps/",
@@ -26,9 +27,12 @@ import PDFSinglePage from "./PDFSinglePage";
 
 // ライブラリ内の assets を URL に変換
 // @ts-ignore
-const CMAP_URL = new URL("./assets/cmaps/", import.meta.url).toString();
+// import.meta.glob("../../../../assets/cmaps/*.bcmap", { eager: true });
+
 // @ts-ignore
-const STANDARD_FONT_URL = new URL("./assets/standard_fonts/", import.meta.url).toString();
+const CMAP_URL = new URL("../../../../cmaps/", import.meta.url).toString();
+// @ts-ignore
+const STANDARD_FONT_URL = new URL("../../../../standard_fonts/", import.meta.url).toString();
 console.log("CMAP_URL", CMAP_URL);
 console.log("STANDARD_FONT_URL", STANDARD_FONT_URL);
 
