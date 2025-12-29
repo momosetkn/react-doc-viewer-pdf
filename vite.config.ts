@@ -21,6 +21,7 @@ export default defineConfig({
       ],
     }),
   ],
+  assetsInclude: ["src/assets/**/*"],
   build: {
     lib: {
       entry: "./src/index.tsx",
